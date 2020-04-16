@@ -82,9 +82,9 @@ if __name__ == '__main__':
   )
   parser.add_argument('infile', type=str, 
                       help='a file path of doccano export')
-  parser.add_argument('indir', type=str,
+  parser.add_argument('indir', type=str, default='./data/indir',
                       help='a directory path of parsed text')
-  parser.add_argument('outdir', type=str,
+  parser.add_argument('outdir', type=str, default='./data/outdir',
                       help='a directory path of this program\'s result')
   args = parser.parse_args()
 
