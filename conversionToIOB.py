@@ -148,7 +148,7 @@ if __name__ == '__main__':
       parsed_morphs_outdir = f_outdir.readlines()
     morphs_outdir[fname_outdir.replace(args.outdir, '').replace('\\', '').replace('.txt', '')] = [s.split('\n')[0] for s in parsed_morphs_outdir]
 
-  print('4. Generating CoNLL formatted file.')
+  print('4. Generating IOB formatted file.')
 
   text = ''
   pbar = tqdm(total=len(json_list))
